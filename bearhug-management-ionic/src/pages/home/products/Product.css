@@ -1,0 +1,49 @@
+.ion-form {
+  display: grid;
+  gap: 1.5rem;
+  padding: 0.5rem 1.2rem;
+}
+
+.ion-form .ion-radio-box {
+  display: grid;
+  justify-content: center;
+  gap: 5px;
+}
+
+ion-radio::part(container) {
+  width: 22px;
+  height: 22px;
+
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+ion-radio::part(mark) {
+  background: none;
+  transition: none;
+  transform: none;
+  border-radius: 0;
+}
+
+ion-radio.radio-checked::part(container) {
+  background: #1105b7;
+  border-color: transparent;
+}
+
+ion-radio.radio-checked::part(mark) {
+  width: 6px;
+  height: 10px;
+
+  border-width: 0px 2px 2px 0px;
+  border-style: solid;
+  border-color: #fff;
+
+  transform: rotate(45deg);
+}
+
+.ion-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1em;
+}

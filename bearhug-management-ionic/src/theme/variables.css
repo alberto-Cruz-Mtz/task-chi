@@ -1,0 +1,70 @@
+/* For information on how to create your own theme, please see:
+http://ionicframework.com/docs/theming/ */
+/* This sets a different item border color for the default theme on ios and md */
+:root {
+  --ion-item-border-color: var(--ion-background-color-step-200);
+  --ion-color-dark: #000000;
+  --ion-color-light: #ffffff;
+  --svg-fill-color: #000000; /* Color de relleno en modo claro */
+}
+
+/* This sets a different background and item background for the default theme on ios */
+:root.ios {
+  --ion-background-color: var(--ion-background-color-step-50, #000000);
+  --ion-toolbar-background: var(--ion-background-color);
+  --ion-item-background: #f3f4f6;
+}
+
+/* This sets a different background and item background for the default theme on md */
+:root.md {
+  --ion-background-color: var(--ion-background-color-step-100, #f3f4f6);
+  --ion-toolbar-background: var(--ion-background-color);
+  --ion-item-background: #f3f4f6;
+}
+
+/* This sets a different item background when dark mode is enabled on ios and md */
+.ion-palette-dark.ios,
+.ion-palette-dark.md {
+  --ion-item-background: #27272a;
+}
+
+/* (Optional) This is added to prevent the flashing that happens when toggling between palettes */
+ion-item {
+  --transition: 0.5s;
+}
+
+* {
+  font-family: "Poppins";
+}
+
+body {
+  color: var(--ion-color-light);
+} /* Estilos específicos para el modo oscuro */
+.ion-palette-dark {
+  --ion-title-color: var(--ion-color-light);
+} /* Estilos específicos para el ion-title */
+ion-title {
+  color: var(--ion-title-color, var(--ion-color-dark));
+}
+body {
+  color: var(--ion-color-light);
+} /* Estilos específicos para el modo oscuro */
+.ion-palette-dark {
+  --ion-title-color: var(--ion-color-light);
+  --svg-fill-color: #ffffff; /* Color de relleno en modo oscuro */
+} /* Estilos específicos para el ion-title */
+ion-title {
+  color: var(--ion-title-color, var(--ion-color-dark));
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./../../public/fonts/Poppins-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./../../public/fonts/Poppins-Bold.ttf");
+  font-weight: bold;
+}

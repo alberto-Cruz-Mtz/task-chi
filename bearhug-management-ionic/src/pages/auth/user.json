@@ -1,0 +1,10 @@
+{
+  "users": [
+    { "username": "omar@labestia.com", "password": "1234" },
+    { "username": "jorge@vape.com", "password": "1234" },
+    { "username": "jassiel@vape.com", "password": "1234" },
+    { "username": "alexis@proton.me", "password": "1234" },
+    { "username": "erick@taiga.com", "password": "1234" },
+    {"username": "paco@example.com", "password": "1234"}
+  ]
+}

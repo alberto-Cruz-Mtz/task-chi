@@ -1,0 +1,7 @@
+{
+  "name": "bearhug-management-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
