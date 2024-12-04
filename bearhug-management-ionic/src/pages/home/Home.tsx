@@ -31,10 +31,7 @@ export default function Home() {
           >
             ver todos los productos
           </IonButton>
-          <IonButton color="primary" shape="round">
-            ver productos
-          </IonButton>
-          <IonButton
+         <IonButton
             routerLink="/home/product/add"
             color="primary"
             shape="round"
